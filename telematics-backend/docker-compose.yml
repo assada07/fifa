@@ -1,0 +1,23 @@
+# =============================================================================
+# docker-compose.yml — BASE FILE (ไฟล์หลัก)
+# =============================================================================
+
+networks:
+  backend-net:
+    external: true
+  odoo-net:
+    external: true
+
+volumes:
+  emqx-data:
+    external: true
+  emqx-log:
+    external: true
+  timescaledb-data:
+    external: true
+  timescaledb-log:
+    external: true
+  redis-data:
+    external: true
+  backend-log:
+    external: true
